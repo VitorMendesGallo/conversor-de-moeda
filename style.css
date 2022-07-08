@@ -1,6 +1,46 @@
+body {
+  height: 100%;
+}
+
 .imagem-de-fundo {
-  height: 100vh;
   background-image: url("./assets/imagem-de-fundo.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.borda {
+  border: solid 2px #f5ab3b;
+}
+
+.botao {
+  border: none;
+  width: 130px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #c0903e;
+  color: white;
+}
+
+.botao:hover {
+  background-color: #f5ab3b;
+}
+
+#resposta {
+  background-color: white;
+  padding: 6px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.imagem-moeda-selecionada {
+  width: 100%;
+  height: 200px;
+}
+
+.borda-no-topo {
+  border-top: #f5ab3b solid 2px;
+}
+
+.imagem-biticoin {
+  width: 70px;
 }
