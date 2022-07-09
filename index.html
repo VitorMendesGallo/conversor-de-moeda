@@ -89,7 +89,6 @@
                   name="opcoes-moedas"
                   id="moeda-dolar"
                   value="dolar"
-                  onclick="trocaImagem()"
                   checked
                 />
                 <label class="form-check-label text-white" for="moeda-dolar"
@@ -103,7 +102,6 @@
                   name="opcoes-moedas"
                   id="moeda-euro"
                   value="euro"
-                  onclick="trocaImagem()"
                 />
                 <label class="form-check-label text-white" for="moeda-euro"
                   >Euro</label
@@ -116,7 +114,6 @@
                   name="opcoes-moedas"
                   id="moeda-libra"
                   value="libra"
-                  onclick="trocaImagem()"
                 />
                 <label class="form-check-label text-white" for="moeda-libra"
                   >Libra</label
@@ -129,7 +126,6 @@
                   name="opcoes-moedas"
                   id="moeda-biticoin"
                   value="biticoin"
-                  onclick="trocaImagem()"
                 />
                 <label class="form-check-label text-white" for="moeda-biticoin"
                   >Biticoin</label
@@ -137,14 +133,18 @@
               </div>
 
               <div class="mt-3 d-flex justify-content-between">
-                <button type="button" class="botao">Converter</button>
-                <button type="button" class="botao">Limpar</button>
+                <button type="button" class="botao" id="botao-converter">
+                  Converter
+                </button>
+                <button type="button" class="botao" id="botao-limpar">
+                  Limpar
+                </button>
               </div>
 
               <p class="text-white mb-2 mt-3">Valor Convertido:</p>
               <p id="resposta">Digite um valor ,escolha a moeda e converter.</p>
             </div>
-            <div class="col-12 col-lg-4 m-4 ">
+            <div class="col-12 col-lg-4 m-4">
               <img
                 src="./assets/imagem-dolar.jpg"
                 alt="Imagem ilustrativa da moeda selecionada"
