@@ -67,7 +67,7 @@ function converteParaLibra() {
 
 function converteParaBiticoin() {
   let valorReais = parseFloat(valorEmReais.value);
-  const cotacaoBiticoin = 114258.6;
+  const cotacaoBiticoin = 109046.61;
   let valorConvertido = valorReais / cotacaoBiticoin;
   resultado.innerHTML = valorConvertido.toFixed(6);
 }

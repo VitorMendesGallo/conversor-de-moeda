@@ -43,6 +43,18 @@ body {
   border-top: #f5ab3b solid 2px;
 }
 
+.imagem-background {
+  background-image: url("./assets/padrao-fundo-rodape.png");
+}
+
 .imagem-biticoin {
   width: 70px;
+}
+
+.texto-justificado {
+  text-align: justify;
+}
+
+.imagem-conversor-moeda {
+  max-width: 200px;
 }

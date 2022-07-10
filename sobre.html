@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor de moeda</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="imagem-de-fundo">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"
+            ><img
+              src="./assets/logo-moeda.png"
+              alt="Logo do conversor de moedas"
+              width="30"
+              height="30"
+              class="d-inline-block align-text-top me-1"
+            />Conversor de Moeda</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Conversor</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  href="./sobre.html"
+                  aria-current="page"
+                  >Sobre</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Entre em Contato</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-lg-8 mt-4">
+            <div class="container borda bg-dark p-3 rounded-4 shadow mb-4">
+              <div class="row">
+                <article class="col-12 col-lg-8">
+                  <h1 class="text-center text-white fs-2">
+                    Sobre o conversor de moedas
+                  </h1>
+                  <p class="text-white texto-justificado mt-3 fs-5">
+                    O conversor de moedas é uma aplicação criada para ajudar na
+                    conversão do Real para outras moedas, como o Dólar, Euro,
+                    Libra e Biticoin . Foi criado por Vitor Mendes, um estudante
+                    de porgramação que pretende entrar nesse ramo tão aquecido
+                    atualmente. Ainda é um trabalho em desenvolvimento e
+                    futuramente será possível receber informações em tempo real
+                    da cotação das moedas, já que atualmente o conversor se
+                    baseia em uma cotação fixa, tendo sua última atualização no
+                    dia 10/07/2022.
+                  </p>
+                </article>
+                <div
+                  class="col-12 col-lg-4 d-flex align-items-center justify-content-center"
+                >
+                  <img
+                    src="./assets/imagem-conversor-moeda.png"
+                    class="imagem-conversor-moeda"
+                    alt="Imagem de uma moeda e duas setas para indicar a conversão."
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="container borda bg-dark p-3 rounded-4 shadow">
+              <article>
+                <h1 class="text-center text-white fs-2">
+                  Cotação atual das moedas:
+                </h1>
+                <div class="d-flex align-items-center justify-content-center">
+                  <ul class="text-white fs-5 mt-2">
+                    <li class="mt-2">
+                      1 Dólar americano = 5,26 Real brasileiro
+                    </li>
+                    <li class="mt-2">1 Euro = 5,35 Real brasileiro</li>
+                    <li class="mt-2">
+                      1 Libra esterlina = 6,32 Real brasileiro
+                    </li>
+                    <li class="mt-2">
+                      1 Biticoin = 109.046,61 Real brasileiro
+                    </li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 mt-4">
+            <div class="container borda bg-dark p-3 rounded-4 shadow mb-4">
+              <article>
+                <h1 class="text-center text-white fs-2">O que é cotação?</h1>
+                <p class="text-white texto-justificado mt-3 fs-5">
+                  A cotação é o preço, ou valor, de uma moeda estrangeira. Este
+                  preço é estabelecido pelo mercado e pode sofrer variações
+                  constantes. A cotação do preço da moeda é definida pelo
+                  mercado conforme as negociações de oferta e demanda feitas ao
+                  longo do dia. Contudo, há vezes em que o Banco Central acaba
+                  interferindo no valor estabelecido pelo mercado, comprando ou
+                  vendendo a moeda para evitar uma valorização ou desvalorização
+                  acentuada.
+                </p>
+              </article>
+              <div class="d-flex align-items-center justify-content-center">
+                <img src="./assets/grafico-ilustrativo.png" width="50%" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-dark p-3 mt-5 borda-no-topo imagem-background">
+      <div class="text-center">
+        <img
+          src="./assets/biticoin.png"
+          alt="Imagem de um biticoin"
+          class="imagem-biticoin"
+        />
+      </div>
+      <p class="text-center text-white mt-2">Code by Vitor Mendes in 2022</p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
