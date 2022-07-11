@@ -15,22 +15,32 @@ let resultado = document.querySelector("#resposta");
 })();
 
 (function converter() {
-  botaoConverter.onclick = () => {
+  valorEmReais.onkeyup = () => {
     if (
       !parseFloat(valorEmReais.value) ||
       parseFloat(valorEmReais.value) <= 0
     ) {
-      alert("[ATENÇÃO] DIGITE UM NÚMERO VÁLIDO !");
+      botaoConverter.setAttribute("disabled", "disabled");
+      botaoConverter.style.cursor = "not-allowed";
+      botaoConverter.classList.add("botao-desativado");
+      botaoConverter.classList.remove("botao");
     } else {
-      if (opcoesMoedas[0].checked) {
-        converteParaDolar();
-      } else if (opcoesMoedas[1].checked) {
-        converteParaEuro();
-      } else if (opcoesMoedas[2].checked) {
-        converteParaLibra();
-      } else if (opcoesMoedas[3].checked) {
-        converteParaBiticoin();
-      }
+      botaoConverter.removeAttribute("disabled");
+      botaoConverter.style.cursor = "pointer";
+      botaoConverter.classList.remove("botao-desativado");
+      botaoConverter.classList.add("botao");
+    }
+  };
+
+  botaoConverter.onclick = () => {
+    if (opcoesMoedas[0].checked) {
+      converteParaDolar();
+    } else if (opcoesMoedas[1].checked) {
+      converteParaEuro();
+    } else if (opcoesMoedas[2].checked) {
+      converteParaLibra();
+    } else if (opcoesMoedas[3].checked) {
+      converteParaBiticoin();
     }
   };
 })();
@@ -76,5 +86,9 @@ function converteParaBiticoin() {
   botaoLimpar.onclick = () => {
     valorEmReais.value = "";
     resultado.innerHTML = "Digite um valor ,escolha a moeda e converter.";
+    botaoConverter.setAttribute("disabled", "disabled");
+    botaoConverter.style.cursor = "not-allowed";
+    botaoConverter.classList.add("botao-desativado");
+    botaoConverter.classList.remove("botao");
   };
 })();
