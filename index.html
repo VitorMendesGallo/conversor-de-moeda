@@ -12,9 +12,15 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="imagem-de-fundo">
+  <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
@@ -63,7 +69,7 @@
       </nav>
     </header>
     <main>
-      <div class="mt-4 container borda bg-dark p-2 rounded-4 shadow">
+      <div class="mt-5 container borda bg-dark p-2 rounded-4 shadow">
         <h1 class="text-center text-white">Conversor Monetário</h1>
         <h2 class="text-center text-white fs-4">
           Converta Real para Dólar, Euro, Libra ou Biticoin
@@ -144,7 +150,11 @@
                 >
                   Converter
                 </button>
-                <button type="button" class="botao" id="botao-limpar">
+                <button
+                  type="button"
+                  class="btn btn-secondary botao-tamanho"
+                  id="botao-limpar"
+                >
                   Limpar
                 </button>
               </div>
@@ -156,7 +166,7 @@
               <img
                 src="./assets/imagem-dolar.jpg"
                 alt="Imagem ilustrativa da moeda selecionada"
-                class="imagem-moeda-selecionada"
+                class="imagem-moeda-selecionada borda"
               />
             </div>
           </div>
@@ -164,7 +174,7 @@
       </div>
     </main>
 
-    <footer class="bg-dark p-3 mt-5 borda-no-topo imagem-background">
+    <footer class="bg-dark p-3 mt-5 rodape">
       <div class="text-center">
         <img
           src="./assets/biticoin.png"

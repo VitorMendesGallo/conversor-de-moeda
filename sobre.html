@@ -12,9 +12,15 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="imagem-de-fundo">
+  <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
@@ -65,86 +71,70 @@
 
     <main>
       <section class="container-fluid">
-        <div class="row">
-          <div class="col-12 col-lg-8 mt-4 d-flex flex-column">
-            <div class="container borda bg-dark p-3 rounded-4 shadow mb-4">
-              <div class="row">
-                <article class="col-12 col-lg-8">
-                  <h1 class="text-center text-white fs-2">
-                    Sobre o conversor de moedas
-                  </h1>
-                  <p class="text-white texto-justificado mt-3 fs-6">
-                    O conversor de moedas é uma aplicação criada para ajudar na
-                    conversão do Real para outras moedas, como o Dólar, Euro,
-                    Libra e Biticoin . Foi criado por Vitor Mendes, um estudante
-                    de porgramação que pretende entrar nesse ramo tão aquecido
-                    atualmente. Ainda é um trabalho em desenvolvimento e
-                    futuramente será possível receber informações em tempo real
-                    da cotação das moedas, já que atualmente o conversor se
-                    baseia em uma cotação fixa, tendo sua última atualização no
-                    dia 10/07/2022.
-                  </p>
-                </article>
-                <div
-                  class="col-12 col-lg-4 d-flex align-items-center justify-content-center"
-                >
-                  <img
-                    src="./assets/imagem-conversor-moeda.png"
-                    class="imagem-conversor-moeda"
-                    alt="Imagem de uma moeda e duas setas para indicar a conversão."
-                  />
-                </div>
-              </div>
+        <div class="row justify-content-center">
+          <article
+            class="text-white bg-dark col-12 col-sm-12 col-lg-3 m-4 borda caixa-tamanho rounded-4"
+          >
+            <div class="d-flex justify-content-center">
+              <img
+                src="./assets/minha-foto.jpeg"
+                class="caixa-imagem borda rounded-circle"
+                alt=""
+              />
             </div>
-            <div class="container borda bg-dark p-3 rounded-4 shadow">
-              <article>
-                <h1 class="text-center text-white fs-2">
-                  Cotação atual das moedas:
-                </h1>
-                <div class="d-flex align-items-center justify-content-center">
-                  <ul class="text-white fs-6 mt-2">
-                    <li class="mt-2">
-                      1 Dólar americano = 5,26 Real brasileiro
-                    </li>
-                    <li class="mt-2">1 Euro = 5,35 Real brasileiro</li>
-                    <li class="mt-2">
-                      1 Libra esterlina = 6,32 Real brasileiro
-                    </li>
-                    <li class="mt-2">
-                      1 Biticoin = 109.046,61 Real brasileiro
-                    </li>
-                  </ul>
-                </div>
-              </article>
+            <h1 class="text-center">Sobre Mim</h1>
+            <p class="texto-justificado">
+              Meu nome é Vitor Mendes, tenho 21 anos e sou um estudante de
+              programação que pretende entrar no mercado. Tenho um pouco de
+              experiência com HTML5, CSS3, JavaScript, Bootstrap e pretendo
+              expandir meus conhecimentos em tecnologias Client-Side e
+              Server-Side.
+            </p>
+          </article>
+          <article
+            class="text-white bg-dark col-12 col-sm-12 col-lg-3 m-4 borda caixa-tamanho rounded-4"
+          >
+            <div class="d-flex justify-content-center">
+              <img
+                src="./assets/imagem-conversor-moeda.png"
+                class="caixa-imagem borda rounded-circle"
+                alt=""
+              />
             </div>
-          </div>
-          <div class="col-12 col-lg-4 mt-4">
-            <div
-              class="container borda bg-dark p-3 rounded-4 shadow altura-caixa"
-            >
-              <article>
-                <h1 class="text-center text-white fs-2">O que é cotação?</h1>
-                <p class="text-white texto-justificado mt-3 fs-6">
-                  A cotação é o preço, ou valor, de uma moeda estrangeira. Este
-                  preço é estabelecido pelo mercado e pode sofrer variações
-                  constantes. A cotação do preço da moeda é definida pelo
-                  mercado conforme as negociações de oferta e demanda feitas ao
-                  longo do dia. Contudo, há vezes em que o Banco Central acaba
-                  interferindo no valor estabelecido pelo mercado, comprando ou
-                  vendendo a moeda para evitar uma valorização ou desvalorização
-                  acentuada.
-                </p>
-              </article>
-              <div class="d-flex align-items-center justify-content-center">
-                <img src="./assets/grafico-ilustrativo.png" width="50%" />
-              </div>
+            <h1 class="text-center">O conversor</h1>
+            <p class="texto-justificado">
+              O conversor de moedas é uma aplicação feita para facilitar a
+              conversão do Real em outra moedas, como o Dólar, Euro, Libra e
+              Biticoin. Com isso podemos ter uma noção de como nossa moeda se
+              desvalorizou ou valorizou em comparação com as outras. É
+              importante ressaltar que essa aplicação trabalha com valores fixos
+              e futuramente terá seus valores recebidos de um servidor.
+            </p>
+          </article>
+          <article
+            class="text-white bg-dark col-12 col-sm-12 col-lg-3 m-4 borda caixa-tamanho rounded-4"
+          >
+            <div class="d-flex justify-content-center">
+              <img
+                src="./assets/calculadora.png"
+                class="caixa-imagem borda rounded-circle"
+                alt=""
+              />
             </div>
-          </div>
+            <h1 class="text-center">Cotação</h1>
+            <p class="texto-justificado">
+              A cotação do preço da moeda é definida pelo mercado conforme as
+              negociações de oferta e demanda feitas ao longo do dia. Contudo,
+              há vezes em que o Banco Central acaba interferindo no valor
+              estabelecido pelo mercado, comprando ou vendendo a moeda para
+              evitar uma valorização ou desvalorização acentuada.
+            </p>
+          </article>
         </div>
       </section>
     </main>
 
-    <footer class="bg-dark p-3 mt-5 borda-no-topo imagem-background">
+    <footer class="bg-dark p-3 mt-5 rodape">
       <div class="text-center">
         <img
           src="./assets/biticoin.png"
