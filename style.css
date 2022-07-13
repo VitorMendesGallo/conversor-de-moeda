@@ -69,9 +69,11 @@ body {
   max-width: 200px;
 }
 
+.altura-caixa {
+  height: 100%;
+}
+
 .formulario {
   width: 90%;
   padding: 20px 0px;
 }
-
-
