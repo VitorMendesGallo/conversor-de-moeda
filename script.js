@@ -47,7 +47,7 @@ let resultado = document.querySelector("#resposta");
 
 function converteParaDolar() {
   let valorReais = parseFloat(valorEmReais.value);
-  const cotacaoDolar = 5.26;
+  const cotacaoDolar = 5.40;
   let valorConvertido = valorReais / cotacaoDolar;
   resultado.innerHTML = valorConvertido.toLocaleString("en-US", {
     style: "currency",
@@ -57,7 +57,7 @@ function converteParaDolar() {
 
 function converteParaEuro() {
   let valorReais = parseFloat(valorEmReais.value);
-  const cotacaoEuro = 5.35;
+  const cotacaoEuro = 5.52;
   let valorConvertido = valorReais / cotacaoEuro;
   resultado.innerHTML = valorConvertido.toLocaleString("de-DE", {
     style: "currency",
@@ -67,7 +67,7 @@ function converteParaEuro() {
 
 function converteParaLibra() {
   let valorReais = parseFloat(valorEmReais.value);
-  const cotacaoLibra = 6.32;
+  const cotacaoLibra = 6.47;
   let valorConvertido = valorReais / cotacaoLibra;
   resultado.innerHTML = valorConvertido.toLocaleString("en-GB", {
     style: "currency",
@@ -77,7 +77,7 @@ function converteParaLibra() {
 
 function converteParaBiticoin() {
   let valorReais = parseFloat(valorEmReais.value);
-  const cotacaoBiticoin = 109046.61;
+  const cotacaoBiticoin = 126917.41;
   let valorConvertido = valorReais / cotacaoBiticoin;
   resultado.innerHTML = valorConvertido.toFixed(6);
 }
