@@ -11,6 +11,10 @@ body {
   background-repeat: no-repeat;
 }
 
+main{
+  margin: 10px;
+}
+
 .borda {
   border: solid 2px #f5ab3b;
 }
